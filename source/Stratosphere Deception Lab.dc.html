@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#141310"/><text x="100" y="118" font-family="monospace" font-size="62" font-weight="700" fill="#dbe648" text-anchor="middle">SDL</text><rect x="60" y="132" width="80" height="4" fill="#dbe648"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { background: oklch(0.17 0.014 55); -webkit-font-smoothing: antialiased; }
+  a { color: oklch(0.82 0.15 95); text-decoration: none; }
+  a:hover { color: oklch(0.9 0.13 95); }
+  ::selection { background: oklch(0.82 0.15 95 / 0.28); }
+  @keyframes dm-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="--acid: oklch(0.82 0.15 95); --flare: oklch(0.72 0.15 30); --ink: oklch(0.17 0.014 55); --ink2: oklch(0.22 0.014 55); --bone: oklch(0.95 0.012 90); --dim: oklch(0.68 0.016 80); background: var(--ink); color: var(--bone); font-family: 'Public Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.55; text-wrap: pretty; overflow-x: hidden;">
+
+  <nav style="position: sticky; top: 0; z-index: 20; background: oklch(0.17 0.014 55 / 0.86); backdrop-filter: blur(10px); border-bottom: 1px solid oklch(0.3 0.014 55); display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px clamp(16px, 4vw, 44px); font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; flex-wrap: wrap;">
+    <a href="#top" style="color: var(--bone); display: flex; align-items: center; gap: 8px;">deception group<span style="display: inline-block; width: 8px; height: 15px; background: var(--acid); margin-left: 2px;"></span></a>
+    <div style="display: flex; gap: clamp(12px, 1.8vw, 26px);">
+      <a href="#work" style="color: var(--dim);">Work</a>
+      <a href="#papers" style="color: var(--dim);">Papers</a>
+      <a href="#code" style="color: var(--dim);">Code</a>
+      <a href="#pod" style="color: var(--dim);">Podcast</a>
+      <a href="#crew" style="color: var(--dim);">Crew</a>
+      <a href="#contact" style="color: var(--acid);">Say hello</a>
+    </div>
+  </nav>
+
+  <section id="top" style="padding: clamp(40px, 6vw, 90px) clamp(16px, 4vw, 44px) clamp(30px, 4vw, 60px); max-width: 1360px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(32px, 5vw, 64px); align-items: center;">
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--flare); margin: 0 0 26px;">Stratosphere Laboratory, Czech Technical University in Prague</p>
+      <h1 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(52px, 11vw, 150px); line-height: 0.86; letter-spacing: -0.03em; margin: 0;">
+        <span style="display: block;">Trust</span>
+        <span style="display: block; font-style: italic; color: var(--acid); margin-left: 0.08em;">nothing</span>
+        <span style="display: block;">on this</span>
+        <span style="display: block; font-style: italic;">network.</span>
+      </h1>
+      <p style="margin: clamp(24px, 3vw, 36px) 0 0; font-size: clamp(17px, 1.4vw, 20px); color: var(--dim); max-width: 44ch;">We build novel traps, then we study who falls for them. Adaptive honeypots, deception detection, and the awkward measurements that keep both honest.</p>
+      <div style="display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase;">
+        <a href="#papers" style="background: var(--acid); color: oklch(0.2 0.02 90); padding: 13px 22px;" style-hover="background: oklch(0.9 0.13 95)">The papers</a>
+        <a href="#code" style="border: 1px solid oklch(0.38 0.014 55); color: var(--bone); padding: 13px 22px;" style-hover="border-color: var(--acid); color: var(--acid)">The code</a>
+      </div>
+    </div>
+
+    <div style="border: 1px solid oklch(0.32 0.014 55); background: oklch(0.13 0.012 55); font-family: 'IBM Plex Mono', monospace; font-size: clamp(12px, 1.05vw, 14px); line-height: 1.85;">
+      <div style="display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-bottom: 1px solid oklch(0.28 0.014 55); color: oklch(0.6 0.016 80); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;">
+        <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--flare);"></span>
+        <span>decoy-07 · this computer does not exist</span>
+      </div>
+      <div style="padding: 22px 18px 26px; display: grid; gap: 4px; align-content: start; min-height: 340px;">
+        <p data-line="" style="margin: 0; color: oklch(0.58 0.016 80);">// intruder connects to a service that does not exist</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> uname -a</p>
+        <p data-line="" style="margin: 0; color: var(--dim);">Linux decoy-07 5.15.0-generic x86_64 GNU/Linux</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> cat /etc/passwd</p>
+        <p data-line="" style="margin: 0; color: var(--dim);">root:x:0:0:root:/root:/bin/bash</p>
+        <p data-line="" style="margin: 0; color: var(--dim);">backup:x:1001:1001::/srv/backup:/bin/sh</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> wget hxxp://…/miner.sh</p>
+        <p data-line="" style="margin: 0; color: var(--acid);">✓ payload captured · 1 of 41,982 this month</p>
+        <p data-line="" style="margin: 0; color: oklch(0.58 0.016 80);">// the filesystem was generated four seconds ago</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> ls /srv/backup</p>
+        <p data-line="" style="margin: 0; color: var(--dim);">payroll_2024.sql.gz  vpn_keys.tar  notes.txt</p>
+        <p data-line="" style="margin: 0; color: oklch(0.58 0.016 80);">// none of these files existed before he asked for them</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> ps aux | grep -i honeypot</p>
+        <p data-line="" style="margin: 0; color: var(--dim);">(no output)</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> curl ifconfig.me</p>
+        <p data-line="" style="margin: 0; color: var(--dim);">203.0.113.44</p>
+        <p data-line="" style="margin: 0; color: var(--acid);">✓ session 00:11:38 · 47 commands · still reading</p>
+        <p data-line="" style="margin: 0;"><span style="color: var(--flare);">root@decoy-07:~#</span> <span style="display: inline-block; width: 8px; height: 14px; background: var(--acid); vertical-align: -2px; animation: dm-blink 1.1s steps(1) infinite;"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" data-reveal="" style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 7vw, 110px) clamp(16px, 4vw, 44px);">
+    <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--flare); margin: 0 0 48px;">What we are working on right now</p>
+    <div style="display: grid; gap: clamp(28px, 4vw, 52px);">
+      <div style="display: grid; grid-template-columns: minmax(90px, 0.6fr) minmax(260px, 2.4fr); gap: clamp(16px, 4vw, 56px); align-items: start; border-top: 1px solid oklch(0.3 0.014 55); padding-top: 26px;">
+        <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-style: italic; font-size: clamp(52px, 7vw, 96px); line-height: 0.8; color: var(--acid);">01</span>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.06; margin: 0 0 14px; letter-spacing: -0.015em;">Better honeypots</h3>
+          <p style="margin: 0; color: var(--dim); max-width: 62ch;">A decoy that replays a script gets burned in minutes. Ours generate their filesystem, users, and history around whatever the intruder does next, so the session lasts long enough to be worth reading.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(90px, 0.6fr) minmax(260px, 2.4fr); gap: clamp(16px, 4vw, 56px); align-items: start; border-top: 1px solid oklch(0.3 0.014 55); padding-top: 26px;">
+        <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-style: italic; font-size: clamp(52px, 7vw, 96px); line-height: 0.8; color: var(--acid);">02</span>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.06; margin: 0 0 14px; letter-spacing: -0.015em;">More intelligence</h3>
+          <p style="margin: 0; color: var(--dim); max-width: 62ch;">Decoys can help us detect, divert, or teach us something about our adversaries. We study how to measure that intelligence gain, how to improve it, and how this can help us tip the scale to the defenders side.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: minmax(90px, 0.6fr) minmax(260px, 2.4fr); gap: clamp(16px, 4vw, 56px); align-items: start; border-top: 1px solid oklch(0.3 0.014 55); padding-top: 26px;">
+        <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-style: italic; font-size: clamp(52px, 7vw, 96px); line-height: 0.8; color: var(--acid);">03</span>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.06; margin: 0 0 14px; letter-spacing: -0.015em;">Believable narratives</h3>
+          <p style="margin: 0; color: var(--dim); max-width: 62ch;">A convincing decoy is a story: a machine with a history, files worth stealing, and a reason to exist. We build narratives that hold up under inspection, deceive the attacker, and lure them deeper instead of scaring them off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="papers" data-reveal="" style="background: var(--bone); color: oklch(0.2 0.014 60); padding: clamp(56px, 7vw, 110px) 0;">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 44px);">
+      <div style="display: flex; align-items: end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 40px;">
+        <h2 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(40px, 6vw, 84px); margin: 0; letter-spacing: -0.03em; line-height: 0.92;">Papers<span style="font-style: italic; color: oklch(0.55 0.14 30);">.</span></h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 92px 1fr; gap: 10px 22px; padding: 26px 0; border-top: 1px solid oklch(0.86 0.012 80); color: oklch(0.2 0.014 60);" style-hover="background: oklch(0.91 0.014 85)">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.5 0.016 70);">01</span>
+        <span>
+          <span style="display: block; font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.18;">Improving LLM-Based SSH Honeypots Through Prompting and Fine-Tuning</span>
+          <span style="display: block; font-size: 15px; color: oklch(0.48 0.016 70); margin-top: 10px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">M Sladić, V Valeros, E Alibalić, S Garcia</span>
+          <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.5 0.14 30); margin-top: 12px; font-family: 'IBM Plex Mono', monospace;"><a href="https://llm4sec-workshop.github.io/" target="_blank" rel="noopener" style="color: oklch(0.5 0.14 30);">LLM4Sec Workshop ↗</a> · Rome · ESORICS 2026</span>
+        </span>
+      </div>
+      <div style="display: grid; grid-template-columns: 92px 1fr; gap: 10px 22px; padding: 26px 0; border-top: 1px solid oklch(0.86 0.012 80); color: oklch(0.2 0.014 60);" style-hover="background: oklch(0.91 0.014 85)">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.5 0.016 70);">02</span>
+        <span>
+          <span style="display: block; font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.18;">Decoys Cannot Go Everywhere: Mapping the Deception Surface in MITRE ATT&amp;CK</span>
+          <span style="display: block; font-size: 15px; color: oklch(0.48 0.016 70); margin-top: 10px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">V Valeros, C Catania, V Lisý, H Griffioen</span>
+          <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.5 0.14 30); margin-top: 12px; font-family: 'IBM Plex Mono', monospace;"><a href="https://adnd.work/" target="_blank" rel="noopener" style="color: oklch(0.5 0.14 30);">AD&amp;D Workshop ↗</a> · Rome · ESORICS 2026</span>
+        </span>
+      </div>
+      <div style="display: grid; grid-template-columns: 92px 1fr; gap: 10px 22px; padding: 26px 0; border-top: 1px solid oklch(0.86 0.012 80); color: oklch(0.2 0.014 60);" style-hover="background: oklch(0.91 0.014 85)">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.5 0.016 70);">03</span>
+        <span>
+          <span style="display: block; font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.18;">AdvancedShelLM: A Stateful Multi-Agent LLM Honeypot for SSH Deception</span>
+          <span style="display: block; font-size: 15px; color: oklch(0.48 0.016 70); margin-top: 10px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">M Sladić, E Alibalić, V Valeros, C Catania, S Garcia</span>
+          <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.5 0.14 30); margin-top: 12px; font-family: 'IBM Plex Mono', monospace;"><a href="https://adnd.work/" target="_blank" rel="noopener" style="color: oklch(0.5 0.14 30);">AD&amp;D Workshop ↗</a> · Rome · ESORICS 2026</span>
+        </span>
+      </div>
+      <div style="display: grid; grid-template-columns: 92px 1fr; gap: 10px 22px; padding: 26px 0; border-top: 1px solid oklch(0.86 0.012 80); color: oklch(0.2 0.014 60);" style-hover="background: oklch(0.91 0.014 85)">
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.5 0.016 70);">04</span>
+        <span>
+          <span style="display: block; font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.18;">Ghost Without Shell: Measuring Non-Interactive SSH Attacks on Honeypots</span>
+          <span style="display: block; font-size: 15px; color: oklch(0.48 0.016 70); margin-top: 10px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">V Valeros, M Sladić, S Garcia</span>
+          <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.5 0.14 30); margin-top: 12px; font-family: 'IBM Plex Mono', monospace;">Preprint · arXiv — add link</span>
+        </span>
+      </div>
+      <sc-if value="{{ showAllPapers }}" hint-placeholder-val="{{ false }}">
+        <div style="display: grid; grid-template-columns: 92px 1fr; gap: 10px 22px; padding: 26px 0; border-top: 1px solid oklch(0.86 0.012 80); color: oklch(0.2 0.014 60);" style-hover="background: oklch(0.91 0.014 85)">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.5 0.016 70);">05</span>
+          <span>
+            <span style="display: block; font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.18;">VelLMes: A high-interaction AI-based deception framework</span>
+            <span style="display: block; font-size: 15px; color: oklch(0.48 0.016 70); margin-top: 10px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">M Sladić, V Valeros, C Catania, S Garcia</span>
+            <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.5 0.14 30); margin-top: 12px; font-family: 'IBM Plex Mono', monospace;"><a href="https://adnd.work/accepted_papers_2025/" target="_blank" rel="noopener" style="color: oklch(0.5 0.14 30);">AD&amp;D Workshop 2025 ↗</a> · IEEE EuroS&amp;P 2025 · Cited by 15</span>
+          </span>
+        </div>
+          <div style="display: grid; grid-template-columns: 92px 1fr; gap: 10px 22px; padding: 26px 0; border-top: 1px solid oklch(0.86 0.012 80); color: oklch(0.2 0.014 60);" style-hover="background: oklch(0.91 0.014 85)">
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.5 0.016 70);">06</span>
+          <span>
+            <span style="display: block; font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.18;">LLM in the shell: Generative honeypots</span>
+            <span style="display: block; font-size: 15px; color: oklch(0.48 0.016 70); margin-top: 10px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em;">M Sladić, V Valeros, C Catania, S Garcia</span>
+            <span style="display: block; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.5 0.14 30); margin-top: 12px; font-family: 'IBM Plex Mono', monospace;">IEEE EuroS&amp;P Workshops, 2024 · Cited by 118</span>
+          </span>
+        </div>
+        </sc-if>
+      <div style="border-top: 1px solid oklch(0.86 0.012 80);"></div>
+      <button type="button" onClick="{{ togglePapers }}" style="margin-top: 26px; background: none; border: 1px solid oklch(0.8 0.012 80); color: oklch(0.3 0.03 40); font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; padding: 13px 22px; cursor: pointer;" style-hover="border-color: oklch(0.5 0.14 30); color: oklch(0.5 0.14 30)">{{ papersToggleLabel }}</button>
+    </div>
+  </section>
+
+  <section id="code" data-reveal="" style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 7vw, 110px) clamp(16px, 4vw, 44px);">
+    <div style="display: flex; align-items: end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 36px;">
+      <h2 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(36px, 5vw, 68px); margin: 0; letter-spacing: -0.03em; line-height: 0.95;">Use our <span style="font-style: italic; color: var(--acid);">tools</span></h2>
+      <a href="https://github.com/stratosphereips" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase;">github.com/stratosphereips ↗</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px;">
+      <a href="https://github.com/stratosphereips/shelLM" target="_blank" rel="noopener" style="display: block; background: var(--ink2); border: 1px solid oklch(0.3 0.014 55); padding: 24px; color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; margin: 0 0 14px; color: var(--acid);">$ git clone stratosphereips/shelLM</p>
+        <p style="margin: 0 0 22px; font-size: 16px; color: var(--dim);">An LLM-driven honeypot shell that improvises a believable Linux system in real time, so attackers keep typing instead of walking away.</p>
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.58 0.016 80); margin: 0;">Honeypot · Python</p>
+      </a>
+      <a href="https://github.com/stratosphereips/cyber-deception-attack-surface" target="_blank" rel="noopener" style="display: block; background: var(--ink2); border: 1px solid oklch(0.3 0.014 55); padding: 24px; color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; margin: 0 0 14px; color: var(--acid);">$ git clone cyber-deception-attack-surface</p>
+        <p style="margin: 0 0 22px; font-size: 16px; color: var(--dim);">A map of where deception can be placed across an environment, and what each placement buys you against a real adversary.</p>
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.58 0.016 80); margin: 0;">Research · Analysis</p>
+      </a>
+      <a href="#" style="display: block; background: var(--ink2); border: 1px solid oklch(0.3 0.014 55); padding: 24px; color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid); margin: 0 0 14px;">Dataset</p>
+        <p style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: 21px; line-height: 1.2; margin: 0 0 12px;">CTU-Hornet-65-Niner</p>
+        <p style="margin: 0 0 22px; font-size: 15px; color: var(--dim);">V Valeros, S Garcia</p>
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.58 0.016 80); margin: 0;">Data in Brief 58 · Elsevier, 2025</p>
+      </a>
+      <a href="#" style="display: block; background: var(--ink2); border: 1px solid oklch(0.3 0.014 55); padding: 24px; color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid); margin: 0 0 14px;">Dataset</p>
+        <p style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: 21px; line-height: 1.2; margin: 0 0 12px;">Hornet 40</p>
+        <p style="margin: 0 0 22px; font-size: 15px; color: var(--dim);">V Valeros, S Garcia</p>
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.58 0.016 80); margin: 0;">Data in Brief 40 · Elsevier, 2022</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="pod" data-reveal="" style="border-top: 1px solid oklch(0.3 0.014 55); border-bottom: 1px solid oklch(0.3 0.014 55); background: var(--ink2);">
+    <div style="max-width: 1360px; margin: 0 auto; padding: clamp(48px, 6vw, 92px) clamp(16px, 4vw, 44px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(32px, 5vw, 64px); align-items: center;">
+      <div>
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--flare); margin: 0 0 20px;">The podcast · Methods of Deception</p>
+        <h2 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(36px, 5vw, 72px); margin: 0 0 18px; letter-spacing: -0.03em; line-height: 0.95;">Methods of <span style="font-style: italic; color: var(--acid);">Deception</span></h2>
+        <p style="margin: 0 0 26px; color: var(--dim); max-width: 54ch;">Every living thing that has ever been hunted has faced the same problem: how not to be seen, not to be caught, not to be believed. The Methods of Deception is a narrated journey through the astonishing ways that animals and even the odd plant and single cell, deceive one another to survive: the disguises, the mimicry, the bluffs, and the vanishing acts that evolution has been perfecting for hundreds of millions of years.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;">
+          <a href="https://thelostsignalpodcast.podbean.com/" target="_blank" rel="noopener" style="background: var(--acid); color: oklch(0.2 0.02 90); padding: 12px 20px;" style-hover="background: oklch(0.9 0.13 95)">Listen ↗</a>
+        </div>
+      </div>
+      <div style="display: grid; gap: 18px; min-width: 0;">
+        <div style="display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px;">
+        <a href="https://thelostsignalpodcast.podbean.com/" target="_blank" rel="noopener" style="flex: 0 0 240px; scroll-snap-align: start; display: grid; align-content: start; gap: 12px; padding: 20px; border: 1px solid var(--acid); background: oklch(0.17 0.014 55); color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+          <span style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid);">
+            <span>Ep 04</span><span>Latest</span>
+          </span>
+          <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: 22px; line-height: 1.15;">The Sudden Shock</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(0.6 0.016 80);">Aug 20, 2026</span>
+        </a>
+        <a href="https://thelostsignalpodcast.podbean.com/" target="_blank" rel="noopener" style="flex: 0 0 240px; scroll-snap-align: start; display: grid; align-content: start; gap: 12px; padding: 20px; border: 1px solid oklch(0.34 0.014 55); background: oklch(0.17 0.014 55); color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+          <span style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.6 0.016 80);">
+            <span>Ep 03</span><span>Aug 6, 2026</span>
+          </span>
+          <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: 22px; line-height: 1.15;">Faking Danger</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(0.6 0.016 80);">Listen ↗</span>
+        </a>
+        <a href="https://thelostsignalpodcast.podbean.com/" target="_blank" rel="noopener" style="flex: 0 0 240px; scroll-snap-align: start; display: grid; align-content: start; gap: 12px; padding: 20px; border: 1px solid oklch(0.34 0.014 55); background: oklch(0.17 0.014 55); color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+          <span style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.6 0.016 80);">
+            <span>Ep 02</span><span>Jul 30, 2026</span>
+          </span>
+          <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: 22px; line-height: 1.15;">Hiding in Plain Sight</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(0.6 0.016 80);">Listen ↗</span>
+        </a>
+        <a href="https://thelostsignalpodcast.podbean.com/" target="_blank" rel="noopener" style="flex: 0 0 240px; scroll-snap-align: start; display: grid; align-content: start; gap: 12px; padding: 20px; border: 1px solid oklch(0.34 0.014 55); background: oklch(0.17 0.014 55); color: var(--bone); transition: border-color 160ms, transform 160ms;" style-hover="border-color: var(--acid); transform: translateY(-3px)">
+          <span style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.6 0.016 80);">
+            <span>Ep 01</span><span>Jul 9, 2026</span>
+          </span>
+          <span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; font-stretch: 88%; font-size: 22px; line-height: 1.15;">Vanishing</span>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(0.6 0.016 80);">Listen ↗</span>
+        </a>
+        </div>
+        <a href="https://thelostsignalpodcast.podbean.com/" target="_blank" rel="noopener" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;">All episodes ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="crew" data-reveal="" style="max-width: 1360px; margin: 0 auto; padding: clamp(24px, 3vw, 40px) clamp(16px, 4vw, 44px) clamp(56px, 7vw, 100px);">
+    <div style="display: flex; align-items: end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 40px;">
+      <h2 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(36px, 5vw, 72px); margin: 0; letter-spacing: -0.03em; line-height: 0.95;">Four <span style="font-style: italic; color: var(--acid);">humans</span></h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, max(190px, 23%)), 1fr)); gap: clamp(20px, 2.4vw, 32px);">
+      <div style="display: grid; gap: 14px;">
+        <div style="aspect-ratio: 4 / 5; border: 1px solid oklch(0.3 0.014 55); overflow: hidden; background: oklch(0.22 0.014 55);">
+          <img src="images/sebastian.webp" alt="Sebastian Garcia" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.05); transition: filter 260ms;" style-hover="filter: none" />
+        </div>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(21px, 1.7vw, 25px); margin: 0 0 6px; letter-spacing: -0.01em;"><a href="#" style="color: var(--bone); text-decoration: none;" style-hover="color: var(--acid)">Sebastian Garcia</a></h3>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid); margin: 0;">Assistant professor</p>
+        </div>
+      </div>
+      <div style="display: grid; gap: 14px;">
+        <div style="aspect-ratio: 4 / 5; border: 1px solid oklch(0.3 0.014 55); overflow: hidden; background: oklch(0.22 0.014 55);">
+          <img src="images/veronica.webp" alt="Veronica Valeros" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.05); transition: filter 260ms;" style-hover="filter: none" />
+        </div>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(21px, 1.7vw, 25px); margin: 0 0 6px; letter-spacing: -0.01em;"><a href="#" style="color: var(--bone); text-decoration: none;" style-hover="color: var(--acid)">Veronica Valeros</a></h3>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid); margin: 0;">PhD candidate</p>
+        </div>
+      </div>
+      <div style="display: grid; gap: 14px;">
+        <div style="aspect-ratio: 4 / 5; border: 1px solid oklch(0.3 0.014 55); overflow: hidden; background: oklch(0.22 0.014 55);">
+          <img src="images/muris.webp" alt="Muris Sladić" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.05); transition: filter 260ms;" style-hover="filter: none" />
+        </div>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(21px, 1.7vw, 25px); margin: 0 0 6px; letter-spacing: -0.01em;"><a href="#" style="color: var(--bone); text-decoration: none;" style-hover="color: var(--acid)">Muris Sladić</a></h3>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid); margin: 0;">PhD candidate</p>
+        </div>
+      </div>
+      <div style="display: grid; gap: 14px;">
+        <div style="aspect-ratio: 4 / 5; border: 1px solid oklch(0.3 0.014 55); overflow: hidden; background: oklch(0.22 0.014 55);">
+          <img src="images/carlos.webp" alt="Carlos Catania" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.05); transition: filter 260ms;" style-hover="filter: none" />
+        </div>
+        <div>
+          <h3 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(21px, 1.7vw, 25px); margin: 0 0 6px; letter-spacing: -0.01em;"><a href="#" style="color: var(--bone); text-decoration: none;" style-hover="color: var(--acid)">Carlos Catania</a></h3>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--acid); margin: 0;">Professor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background: var(--acid); color: oklch(0.2 0.02 90); padding: clamp(56px, 7vw, 104px) 0 32px;">
+    <div style="max-width: 1360px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 44px);">
+      <h2 style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 640; font-stretch: 88%; font-size: clamp(40px, 7vw, 104px); margin: 0 0 22px; letter-spacing: -0.035em; line-height: 0.9;">Come <span style="font-style: italic;">set a trap</span> with us.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 4vw, 56px); align-items: start;">
+        <p style="margin: 0; max-width: 46ch; font-size: 18px;">Thesis projects, internships, funded collaborations. If your problem involves an adversary who reacts to being watched, write to us.</p>
+        <div style="display: grid; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 13.5px;">
+          <a href="mailto:stratosphere@aic.fel.cvut.cz" style="color: oklch(0.2 0.02 90); border-bottom: 1px solid oklch(0.2 0.02 90 / 0.3); padding-bottom: 9px;" style-hover="border-color: oklch(0.2 0.02 90)">stratosphere@aic.fel.cvut.cz</a>
+          <a href="#" style="color: oklch(0.2 0.02 90); border-bottom: 1px solid oklch(0.2 0.02 90 / 0.3); padding-bottom: 9px;" style-hover="border-color: oklch(0.2 0.02 90)">GitHub ↗</a>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-top: clamp(44px, 6vw, 80px); font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.35 0.03 90);">
+        <span>Stratosphere Laboratory, AI Center, FEL, Czech Technical University in Prague</span>
+        <span>Karlovo náměstí 13, Prague 2</span>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;acidColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;oklch(0.82 0.15 95)&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;oklch(0.82 0.15 95)&quot;,&quot;oklch(0.84 0.16 135)&quot;,&quot;oklch(0.8 0.15 200)&quot;,&quot;oklch(0.78 0.16 25)&quot;],&quot;section&quot;:&quot;Look&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  rootRef = React.createRef();
+
+  componentDidMount() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    if (this.props.acidColor) root.style.setProperty("--acid", this.props.acidColor);
+
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const motion = this.props.motion !== false && !reduced;
+
+    if (motion) {
+      const lines = Array.from(root.querySelectorAll("[data-line]"));
+      lines.forEach(el => { el.style.opacity = "0"; el.style.transition = "opacity 220ms ease"; });
+      lines.slice(0, 8).forEach(el => { el.style.opacity = "1"; });
+      this.timers = lines.slice(8).map((el, i) => setTimeout(() => { el.style.opacity = "1"; }, 500 + i * 260));
+
+      const targets = Array.from(root.querySelectorAll("[data-reveal]"));
+      targets.forEach(el => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "opacity 640ms cubic-bezier(.22,.61,.36,1), transform 640ms cubic-bezier(.22,.61,.36,1)";
+      });
+      this.io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          e.target.style.opacity = "1";
+          e.target.style.transform = "none";
+          this.io.unobserve(e.target);
+        });
+      }, { rootMargin: "0px 0px -12% 0px", threshold: 0.05 });
+      targets.forEach(el => this.io.observe(el));
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.io) this.io.disconnect();
+    (this.timers || []).forEach(clearTimeout);
+  }
+
+  state = { showAllPapers: false };
+
+  renderVals() {
+    const showAllPapers = this.state.showAllPapers;
+    return {
+      rootRef: this.rootRef,
+      showAllPapers,
+      papersToggleLabel: showAllPapers ? "Show fewer" : "Show all six papers",
+      togglePapers: () => this.setState(s => ({ showAllPapers: !s.showAllPapers })),
+    };
+  }
+}
+</script>
+</body>
+</html>
